@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		3160BFE025B571D700CF73C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3160BFDE25B571D700CF73C6 /* Main.storyboard */; };
 		3160BFE225B571D800CF73C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3160BFE125B571D800CF73C6 /* Assets.xcassets */; };
 		3160BFE525B571D800CF73C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3160BFE325B571D800CF73C6 /* LaunchScreen.storyboard */; };
+		3160BFEF25B5737300CF73C6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3160BFEE25B5737300CF73C6 /* Kingfisher */; };
+		3160BFF325B575CB00CF73C6 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3160BFF225B575CB00CF73C6 /* FirebaseStorageSwift-Beta */; };
+		3160BFF825B576E600CF73C6 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160BFF525B576E600CF73C6 /* DataService.swift */; };
+		3160BFF925B576E600CF73C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160BFF625B576E600CF73C6 /* Extensions.swift */; };
+		3160BFFA25B576E600CF73C6 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160BFF725B576E600CF73C6 /* Structs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,9 @@
 		3160BFE125B571D800CF73C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3160BFE425B571D800CF73C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3160BFE625B571D800CF73C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3160BFF525B576E600CF73C6 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		3160BFF625B576E600CF73C6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3160BFF725B576E600CF73C6 /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3160BFEF25B5737300CF73C6 /* Kingfisher in Frameworks */,
+				3160BFF325B575CB00CF73C6 /* FirebaseStorageSwift-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,9 @@
 				3160BFD825B571D700CF73C6 /* AppDelegate.swift */,
 				3160BFDA25B571D700CF73C6 /* SceneDelegate.swift */,
 				3160BFDC25B571D700CF73C6 /* ViewController.swift */,
+				3160BFF525B576E600CF73C6 /* DataService.swift */,
+				3160BFF625B576E600CF73C6 /* Extensions.swift */,
+				3160BFF725B576E600CF73C6 /* Structs.swift */,
 				3160BFDE25B571D700CF73C6 /* Main.storyboard */,
 				3160BFE125B571D800CF73C6 /* Assets.xcassets */,
 				3160BFE325B571D800CF73C6 /* LaunchScreen.storyboard */,
@@ -83,6 +96,10 @@
 			dependencies = (
 			);
 			name = RemoteConfigurationDemo;
+			packageProductDependencies = (
+				3160BFEE25B5737300CF73C6 /* Kingfisher */,
+				3160BFF225B575CB00CF73C6 /* FirebaseStorageSwift-Beta */,
+			);
 			productName = RemoteConfigurationDemo;
 			productReference = 3160BFD525B571D700CF73C6 /* RemoteConfigurationDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +127,10 @@
 				Base,
 			);
 			mainGroup = 3160BFCC25B571D700CF73C6;
+			packageReferences = (
+				3160BFED25B5737300CF73C6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				3160BFF125B575CB00CF73C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 3160BFD625B571D700CF73C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3160BFFA25B576E600CF73C6 /* Structs.swift in Sources */,
+				3160BFF925B576E600CF73C6 /* Extensions.swift in Sources */,
 				3160BFDD25B571D700CF73C6 /* ViewController.swift in Sources */,
 				3160BFD925B571D700CF73C6 /* AppDelegate.swift in Sources */,
 				3160BFDB25B571D700CF73C6 /* SceneDelegate.swift in Sources */,
+				3160BFF825B576E600CF73C6 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +363,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3160BFED25B5737300CF73C6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.1;
+			};
+		};
+		3160BFF125B575CB00CF73C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3160BFEE25B5737300CF73C6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3160BFED25B5737300CF73C6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		3160BFF225B575CB00CF73C6 /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3160BFF125B575CB00CF73C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3160BFCD25B571D700CF73C6 /* Project object */;
 }
